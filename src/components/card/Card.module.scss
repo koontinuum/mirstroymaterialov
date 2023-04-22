@@ -1,0 +1,52 @@
+.wrapper{
+	width: 90%;
+	height: 100vh;
+	padding: 0 100px;
+}
+
+.card{
+	width: 300px;
+	border: burlywood solid 1px;
+	border-radius: 16px;
+	padding: 13px;
+	.card_img{
+		object-fit: cover;
+		img{
+			border-radius: 20px;
+				width: 100%;
+		}
+
+	}
+}
+
+.card_info{
+	 h4{
+		font-family: "Montserrat";
+		font-size: 18px;
+		margin-top: 10px;
+			margin-bottom: 15px;
+	 }
+	 h5{
+		margin-top: 10px;
+		margin-bottom: 15px;
+		font-family: "Montserrat";
+		font-size: 16px;
+	 }
+}
+
+.card_btn{
+	display: flex;
+	justify-content: space-between;
+	button {
+			font-family: "Montserrat";
+			outline: none;
+			background-color: green;
+			padding: 10px 14px;
+			border-radius: 16px;
+			border: none;
+			font-size: 14px;
+			&:hover {
+				background-color: rgb(15, 209, 15);
+			}
+}
+}
