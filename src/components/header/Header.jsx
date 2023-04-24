@@ -3,7 +3,7 @@ import css from "./Header.module.scss";
 import searchIcon from "../../assets/headerIcons/searchIcon.svg";
 import phoneCallIcon from "../../assets/headerIcons/phoneCallIcon.svg";
 import dileveryIcon from "../../assets/headerIcons/deliveryIcon.svg";
-import materialIcon from "../../assets/headerIcons/materialsIcon.svg";
+import locationIcon from "../../assets/headerIcons/locationIcon.svg";
 import logo from "../../assets/bec2cd55-8711-4f51-a3ee-427a3810121d.png";
 
 function Header() {
@@ -17,16 +17,17 @@ function Header() {
           </button>
           <input type="search" placeholder="Поиск продукции..." />
         </div>
-        <div className={css.materials}>
-          <img src={materialIcon} alt="" />
-          <p>
-            Широкий ассортимент <br /> строительных материалов.
-          </p>
-        </div>
         <div className={css.location}>
           <img src={dileveryIcon} alt="" />
           <p>
-            Доставка по Москве <br /> и Московской области
+            Доставка по Москве <br /> и Московской области. <br /> Оплата по
+            факту доставки.
+          </p>
+        </div>
+        <div className={css.materials}>
+          <img src={locationIcon} alt="" />
+          <p>
+            Строительный рынок "Мельница" <br /> МКАД 41 км наша местоположение.
           </p>
         </div>
         <div className={css.contacts}>
