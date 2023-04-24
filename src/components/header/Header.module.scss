@@ -13,7 +13,6 @@
   }
   p {
     color: #27a356;
-    font-size: 12px;
   }
   .searchEngine {
     width: 500px;
@@ -62,6 +61,7 @@
     }
   }
   .location {
+    width: 400px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -74,7 +74,7 @@
     align-items: center;
     gap: 12px;
     img {
-      width: 35px;
+      width: 30px;
     }
   }
 }
