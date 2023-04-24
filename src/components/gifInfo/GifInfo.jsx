@@ -1,6 +1,5 @@
-import React from 'react'
-
-import css from './GifInfo.module.scss'
+import React from "react";
+import css from "./GifInfo.module.scss";
 
 const GifInfo = () => {
   return (
@@ -18,10 +17,10 @@ const GifInfo = () => {
           круги, лакокрасочная продукция, электроды, сухие строительные смеси,
           инструменты и многое другое.
         </p>
-        <button> Подробнее</button>
+        <button>Подробнее</button>
       </div>
     </section>
   );
-}
+};
 
-export default GifInfo
+export default GifInfo;
