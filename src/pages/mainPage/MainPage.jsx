@@ -11,19 +11,12 @@ import BlockInfo from "../../components/blockInfo/BlockInfo";
 function MainPage() {
   return (
     <div className={css.wrapper}>
-      {/* <DropDown /> */}
+      
       <Header />
-
-      <Main />
       <Card/>
       <GifInfo/>
       <Footer/>
-    </>
-
       <PlaceOfChoice />
-      {/* <BlockInfo /> */}
-      {/* <Card /> */}
-      {/* <GifInfo /> */}
     </div>
 
   );
