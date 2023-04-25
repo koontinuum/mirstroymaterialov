@@ -2,15 +2,17 @@ import React from "react";
 import css from "./Header.module.scss";
 import searchIcon from "../../assets/headerIcons/searchIcon.svg";
 import phoneCallIcon from "../../assets/headerIcons/phoneCallIcon.svg";
-import dileveryIcon from "../../assets/headerIcons/deliveryIcon.svg";
-import locationIcon from "../../assets/headerIcons/locationIcon.svg";
-import logo from "../../assets/bec2cd55-8711-4f51-a3ee-427a3810121d.png";
+import dileveryIcon from "../../assets/icons8-fast-shipping-64.png";
+import logo from "../../assets/logo.png";
 
 function Header() {
   return (
     <div className="container">
       <div className={css.headerContent}>
         <img src={logo} alt="" />
+        <strong>
+          Качество и надежность <br /> это наша главная цель!
+        </strong>
         <div className={css.searchEngine}>
           <button>
             <img src={searchIcon} alt="" />
@@ -22,12 +24,6 @@ function Header() {
           <p>
             Доставка по Москве <br /> и Московской области. <br /> Оплата по
             факту доставки.
-          </p>
-        </div>
-        <div className={css.materials}>
-          <img src={locationIcon} alt="" />
-          <p>
-            Строительный рынок "Мельница" <br /> МКАД 41 км наша местоположение.
           </p>
         </div>
         <div className={css.contacts}>
