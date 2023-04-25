@@ -35,13 +35,15 @@ const Card = () => {
           {catagory[selected]}
         </h5>
         <ul>
-          {open && (
-
-            catagory.map((item, i) =>
-              <li onClick={() => onClickSort(i)}
-             className={selected === i ? css.selected : ""}>{item}</li>
-              )
-          )}
+          {open &&
+            catagory.map((item, i) => (
+              <li
+                onClick={() => onClickSort(i)}
+                className={selected === i ? css.selected : ""}
+              >
+                {item}
+              </li>
+            ))}
         </ul>
       </div>
       {CardData.map((item) => (
