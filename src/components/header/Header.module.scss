@@ -7,40 +7,17 @@
   gap: 32px;
   padding: 20px 70px 0 70px;
   font-family: "Montserrat", sans-serif;
+  position: fixed;
+  background-color: green;
+  z-index: 100;
   img {
     width: 190px;
     height: 90px;
   }
   p {
     color: #27a356;
-    font-size: 12px;
   }
-  .searchEngine {
-    width: 500px;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #eeeeee;
-    padding: 0 20px 0 20px;
-    input {
-      font-family: "Montserrat";
-      width: 100%;
-      outline: none;
-      border: none;
-      background: transparent;
-    }
-    button {
-      padding-top: 4px;
-      background: transparent;
-      border: none;
-      img {
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
+ 
   .contacts {
     display: flex;
     align-items: center;
@@ -62,6 +39,7 @@
     }
   }
   .location {
+    width: 400px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -74,7 +52,7 @@
     align-items: center;
     gap: 12px;
     img {
-      width: 35px;
+      width: 30px;
     }
   }
 }

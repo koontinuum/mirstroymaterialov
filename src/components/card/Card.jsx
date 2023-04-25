@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { CardData } from "../../constants/CardData";
+import useSearch from "../../hooks/UseSearch";
 import css from "./Card.module.scss";
 
 const Card = () => {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
-
+ const { search } = useSearch();
   const catagory = [
     " алфавиту с начала",
     " алфавиту с конца",
     " цена возрастанию",
     " цена убывания",
   ];
-
+console.log(search)
   const onClickSort = (index) => {
     setSelected(index);
     index === 0
@@ -35,16 +36,23 @@ const Card = () => {
           {catagory[selected]}
         </h5>
         <ul>
-          {open && (
-
-            catagory.map((item, i) =>
-              <li onClick={() => onClickSort(i)}
-             className={selected === i ? css.selected : ""}>{item}</li>
-              )
-          )}
+          {open &&
+            catagory.map((item, i) => (
+              <li
+                onClick={() => onClickSort(i)}
+                className={selected === i ? css.selected : ""}
+              >
+                {item}
+              </li>
+            ))}
         </ul>
       </div>
-      {CardData.map((item) => (
+      {CardData.filter((item) =>{
+        if (item.title.toLocaleLowerCase().includes(search)){
+          return true
+        }
+        return false}
+      ).map((item) => (
         <div className={css.card} key={item.id}>
           <div className={css.card_img}>
             <img src={item.img} alt="" />

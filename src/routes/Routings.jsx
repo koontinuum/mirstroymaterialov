@@ -6,8 +6,7 @@ import DropDown from "../components/dropdown/DropDown";
 
 function Routings() {
   return (
-    <div className={css.wrapper}>
-      <DropDown />
+    <div className="content">
       <Routes>
         <Route path="/" element={<MainPage />} />
       </Routes>
