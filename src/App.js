@@ -3,9 +3,11 @@ import { Helmet } from 'react-helmet';
 import tabLogo from './assets/tabLogo.png'
 import DropDown from './components/dropdown/DropDown';
 import Routings from './routes/Routings';
+import { SearchProider } from './hooks/search/SearchProvaider';
 
 function App() {
   return (
+    <SearchProider>
     <div className="App">
       <Helmet>
         <meta charSet="utf-8" />
@@ -17,6 +19,7 @@ function App() {
         <div class='content'><Routings /></div>
       </div>
     </div>
+    </SearchProider>
   );
 }
 

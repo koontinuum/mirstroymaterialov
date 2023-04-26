@@ -1,6 +1,6 @@
 import React from 'react'
 import scss from './Category.module.scss'
-import box1 from '../../assets/navBarIcons/1.svg'
+import box1 from '../../assets/navBarIcons/bagImg.svg'
 
 function Category() {
     return (
