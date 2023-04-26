@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import css from "./PlaceOfChoice.module.scss";
-import mainImg from "../../assets/choicesIcons/mainImg3.jpg";
+import slideImg1 from "../../assets/choicesIcons/slideImg1.jpg";
 import mainImg2 from "../../assets/choicesIcons/mainImg2.jpg";
 import mainImg3 from "../../assets/choicesIcons/main3.jpg";
 import mainImg4 from "../../assets/choicesIcons/mainImg4.jpeg";
@@ -16,7 +16,7 @@ const PlaceOfChoice = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 2,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     pauseOnHover: true,
     arrows: false,
@@ -32,8 +32,8 @@ const PlaceOfChoice = () => {
       <Slider ref={arrowRef} {...settings}>
         <div className={css.mainImg}>
           <h3 className={css.mainImgContents}>
-            <b>Стеновые и фасадные материалы</b>
-            <img src={mainImg} alt="" />
+            <b>Стеновые строительные материалы</b>
+            <img src={slideImg1} alt="" />
           </h3>
         </div>
         <div className={css.mainImg}>

@@ -1,22 +1,29 @@
 import searchIcon from "../../assets/headerIcons/searchIcon.svg";
-import useSearch from '../../hooks/UseSearch';
-import css from './search.module.scss'
-
-
+import useSearch from "../../hooks/UseSearch";
+import css from "./Search.module.scss";
 
 const Search = () => {
   const { search, setSearch, openCard, setOpenCard } = useSearch();
 
-  console.log(openCard)
   return (
     <div className={css.searchEngine}>
       <button>
         <img src={searchIcon} alt="" />
       </button>
-      <input type="search" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Поиск продукции..." />
-      <input type="submit" onClick={()=> setOpenCard(!openCard)} />
+      <input
+        className={css.searchInp}
+        type="search"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        placeholder="Поиск продукции..."
+      />
+      <input
+        type="submit"
+        value="Пойск"
+        onClick={() => setOpenCard(!openCard)}
+      />
     </div>
   );
-}
+};
 
-export default Search
+export default Search;
