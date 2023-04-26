@@ -27,10 +27,11 @@ function Header() {
             <b>+79017029445</b>
             <b>+79160540090</b>
           </div>
+
         </div>
       </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default Header;
