@@ -1,3 +1,4 @@
+
 import React from 'react'
 import scss from './Category.module.scss'
 import box1 from '../../assets/iconCardCategory/pipe-svgrepo-com.svg'
@@ -99,8 +100,7 @@ function Category() {
                     </a>
                 </div>
             </div>
-        </div>
-    )
+  );
 }
 
-export default Category
+export default Category;
