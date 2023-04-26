@@ -1,6 +1,9 @@
 .wrapper {
-    width: 1400px;
-    padding: 60px 20px;
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .top_block {
@@ -52,6 +55,7 @@
             font-weight: normal;
             font-size: 14px;
             line-height: 1.5;
+            color: black;
         }
     }
 }

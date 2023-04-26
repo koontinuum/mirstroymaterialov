@@ -13,7 +13,7 @@ function Header() {
         <strong>
           Качество и надежность <br /> это наша главная цель!
         </strong>
-        <Search/>
+        <Search />
         <div className={css.location}>
           <img src={dileveryIcon} alt="" />
           <p>
