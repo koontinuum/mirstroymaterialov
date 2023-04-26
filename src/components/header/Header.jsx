@@ -13,7 +13,7 @@ function Header() {
         <strong>
           Качество и надежность <br /> это наша главная цель!
         </strong>
-        <Search/>
+        <Search />
         <div className={css.location}>
           <img src={dileveryIcon} alt="" />
           <p>
@@ -27,11 +27,10 @@ function Header() {
             <b>+79017029445</b>
             <b>+79160540090</b>
           </div>
-
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default Header;
