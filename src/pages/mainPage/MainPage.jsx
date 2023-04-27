@@ -1,4 +1,8 @@
 import React from "react";
+import Header from "../../components/header/Header";
+import Category from "../../components/Category/Category";
+import Card from "../../components/card/Card";
+import CardsInfo from "../../components/CardsInfo/CardsInfo";
 import CardsInfo from "../../components/CardsInfo/CardsInfo";
 import Category from "../../components/Category/Category";
 import Card from "../../components/card/Card";
@@ -10,10 +14,11 @@ import useSearch from "../../hooks/UseSearch";
 
 function MainPage() {
   const { openCard } = useSearch();
-  console.log(openCard);
+  //console.log(openCard);
   return (
     <div>
       <Header />
+      {/*<Card/>*/}
       {openCard && (
         <div>
           <Card />
