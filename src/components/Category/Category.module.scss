@@ -32,9 +32,9 @@
 
 .box1, .box2 {
     width: 272px;
-    height: 162px;
+    height: 292px;
     border: 1px solid gray;
-    padding: 36px;
+    padding-top: 36px;
     transition: 0.5s;
     background: white;
     a {
@@ -45,8 +45,28 @@
         justify-content: center;
         gap: 10px;
         img {
-            width: 50px;
-            height: 50px;
+            width: 181px;
+            height: 181px;
+        }
+
+        .img_gidro {
+            width: 235px;
+            height: 174px;
+        }
+        
+        .img_teplo {
+            width: 181px;
+            height: 160px !important;
+        }
+        .img_eletrica {
+            width: 221px;
+        }
+        .img_santehnica {
+            width: 264px;
+        }
+        .img_poli {
+            width: 210px;
+            height: 181px;
         }
 
         P {
@@ -56,13 +76,13 @@
             font-size: 14px;
             line-height: 1.5;
             color: black;
+            width: 217px;
+            text-align: center;
         }
     }
 }
 
-
 .box1:hover, .box2:hover {
-    // transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 0 0 8px rgba(0, 0, 0, 1.6);
     background: white;
