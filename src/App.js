@@ -3,10 +3,13 @@ import { Helmet } from 'react-helmet';
 import DropDown from './components/dropdown/DropDown';
 import Routings from './routes/Routings';
 import { SearchProider } from './hooks/search/SearchProvaider';
+import { store } from './redux/store'
+import { Provider } from 'react-redux'
 
 function App() {
   return (
     <SearchProider>
+      <Provider store={store}>
     <div className="App">
       <Helmet>
         <meta charSet="utf-8" />
@@ -17,7 +20,8 @@ function App() {
         <div class='content'><Routings /></div>
       </div>
     </div>
-    </SearchProider>
+    </Provider>
+    //</SearchProider>
   );
 }
 

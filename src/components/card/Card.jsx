@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { CardData } from "../../constants/CardData";
-import useSearch from "../../hooks/UseSearch";
 import css from "./Card.module.scss";
+import { useSelector } from "react-redux";
 
 const Card = () => {
-  const {search }= useSearch()
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
+
+const search = useSelector((state) => state.search.value);
 
   const catagory = [
     " алфавиту с начала",
@@ -14,9 +15,8 @@ const Card = () => {
     " цена возрастанию",
     " цена убывания",
   ];
-console.log(search)
   const onClickSort = (index) => {
-    setSelected(index);
+    setSelected(index)
     index === 0
       ? CardData.sort((x, y) => (x.title > y.title ? 1 : -1))
       : index === 1
