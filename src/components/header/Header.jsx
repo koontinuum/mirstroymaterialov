@@ -1,9 +1,9 @@
 import React from "react";
 import css from "./Header.module.scss";
-import searchIcon from "../../assets/headerIcons/searchIcon.svg";
 import phoneCallIcon from "../../assets/headerIcons/phoneCallIcon.svg";
 import dileveryIcon from "../../assets/icons8-fast-shipping-64.png";
 import logo from "../../assets/logo.png";
+import Search from "../search/Search";
 
 function Header() {
   return (
@@ -13,12 +13,7 @@ function Header() {
         <strong>
           Качество и надежность <br /> это наша главная цель!
         </strong>
-        <div className={css.searchEngine}>
-          <button>
-            <img src={searchIcon} alt="" />
-          </button>
-          <input type="search" placeholder="Поиск продукции..." />
-        </div>
+        <Search />
         <div className={css.location}>
           <img src={dileveryIcon} alt="" />
           <p>
