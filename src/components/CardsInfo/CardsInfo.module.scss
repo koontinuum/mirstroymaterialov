@@ -44,8 +44,7 @@
 }
 
 .inner_text {
-    padding: 12px 140px 0 12px;
-
+    padding-top: 12px;
     .title {
         display: flex;
         flex-direction: column;
@@ -70,7 +69,7 @@
                 font-size: 14px;
                 line-height: 1.5;
                 color: black;
-                width: 149px;
+                width: 179px;
             }
 
             img {
@@ -92,7 +91,7 @@
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 1.5;
-                width: 236px;
+                width: 325px;
                 color: black;
             }
 

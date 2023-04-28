@@ -16,16 +16,15 @@ function CardsInfo() {
                         <div className={scss.title}>
                             <div>
                                 <img src={icon1} alt="" />
-                                <span>Продаем с 2013 года</span>
+                                <span>Продаем с 2023 года</span>
                             </div>
                             <div className={scss.line}></div>
                         </div>
                         <div className={scss.text}>
                             <ul>
-                                <li>7 магазинов по г.Бишкек</li>
                                 <li>Прямые поставки продукции</li>
-                                <li>Собственное производство</li>
-                                <li>Доставка по всему Кыргызстану</li>
+                                <li>Заказы также принимаются</li>
+                                <li>Доставка по Москве и Московской области</li>
                             </ul>
                         </div>
                     </div>
@@ -42,7 +41,7 @@ function CardsInfo() {
                         <div className={scss.text}>
                             <ul>
                                 <li>Ежедневно с 8:30 до 18:00</li>
-                                <li>Шаговая доступность</li>
+                                <li>МКАД 41 км наша местоположение</li>
                                 <li>Большой ассортимент</li>
                             </ul>
                         </div>
@@ -83,8 +82,7 @@ function CardsInfo() {
                         </div>
                         <div className={scss.text}>
                             <ul>
-                                <li>Оплата наличными или банковской картой </li>
-                                <li>Перечислением</li>
+                                <li>Оплата по факту доставки</li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +109,7 @@ function CardsInfo() {
                         <div className={scss.title}>
                             <div>
                                 <img src={icon6} alt="" />
-                                <span>Более 5000 товаров</span>
+                                <span>Разнообразие товаров</span>
                             </div>
                             <div className={scss.line}></div>
                         </div>

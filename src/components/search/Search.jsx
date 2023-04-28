@@ -1,6 +1,6 @@
 import searchIcon from "../../assets/headerIcons/searchIcon.svg";
 import useSearch from "../../hooks/UseSearch";
-import css from "./Search.module.scss";
+import css from "./search.module.scss";
 
 const Search = () => {
   const { search, setSearch, openCard, setOpenCard } = useSearch();
