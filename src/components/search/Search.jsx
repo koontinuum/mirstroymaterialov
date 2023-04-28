@@ -1,11 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import searchIcon from "../../assets/headerIcons/searchIcon.svg";
-import useSearch from "../../hooks/UseSearch";
 import css from "./search.module.scss";
 import useSearch from '../../hooks/UseSearch';
-import css from './search.module.scss'
 import {setSearch} from '../../redux/slices/SearchSLice'
-import css from "./Search.module.scss";
+
 
 const Search = () => {
   const { openCard, setOpenCard } = useSearch();
