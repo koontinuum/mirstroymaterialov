@@ -18,92 +18,7 @@ import img15 from '../../assets/iconCardCategory/pilomaterial.jpg'
 
 function Category() {
 
-  return (
-    <div className={scss.wrapper}>
-      <div className={scss.top_block}>
-        <h3>Категории товаров</h3>
-      </div>
-      <div className={scss.container}>
-        <div className={scss.box1}>
-          <a href="">
-            <img src={box1} alt="" />
-            <p>Арматура</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box2} alt="" />
-            <p>Металлопрокат</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box3} alt="" />
-            <p>Пиломатериалы</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box4} alt="" />
-            <p>Металлоконструкции</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box5} alt="" />
-            <p>Сетки МАК</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box6} alt="" />
-            <p>Заборная сетка</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box7} alt="" />
-            <p>Гипсокортон</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box8} alt="" />
-            <p>Утеплитель</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box9} alt="" />
-            <p>Cтроительные смеси</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box10} alt="" />
-            <p>Лакокрасочные метериалы</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box11} alt="" />
-            <p>Инструменты</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box1} alt="" />
-            <p>Водопровод и канализация</p>
-          </a>
-        </div>
-        <div className={scss.box2}>
-          <a href="">
-            <img src={box12} alt="" />
-            <p>Крпежи</p>
-          </a>
-        </div>
-      </div>
-    </div>
+ 
 
     return (
         <div className={scss.wrapper}>
@@ -202,7 +117,7 @@ function Category() {
                     </a>
                 </div>
             </div>
-
+            </div>
   );
 }
 

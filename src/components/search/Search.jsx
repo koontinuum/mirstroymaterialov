@@ -1,19 +1,19 @@
 import { useDispatch, useSelector } from "react-redux";
 import searchIcon from "../../assets/headerIcons/searchIcon.svg";
-import useSearch from '../../hooks/UseSearch';
 import css from './search.module.scss'
-import {setSearch} from '../../redux/slices/SearchSLice'
-import css from "./Search.module.scss";
+import {setSearch, setOpen} from '../../redux/slices/SearchSLice'
 
 const Search = () => {
-  const { openCard, setOpenCard } = useSearch();
 
 
  const dispatch = useDispatch()
 const search = useSelector((state) => state.search.value);
+const open = useSelector((state) => state.search.open);
+
   const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      setOpenCard(!openCard);
+    
+     if (event.key === "Enter") {
+      open(!open);
     }
   };
 
@@ -23,22 +23,14 @@ const search = useSelector((state) => state.search.value);
         className={css.searchInp}
         type="search"
         value={search}
-        onChange={(e) => setSearch(e.target.value)}
+        onChange={(e) => dispatch(setSearch(e.target.value))}
         onKeyDown={handleKeyDown}
         placeholder="Поиск продукции..."
       />
-      {/* <input type="submit" value="" onClick={() => setOpenCard(!openCard)} /> */}
-      <button type="sumbit" onClick={() => setOpenCard(!openCard)}>
+      <button type="sumbit" onClick={() => dispatch(setOpen())}>
         <img src={searchIcon} alt="" />
       </button>
-      <input
-        type="search"
-        value={search}
-        onChange={(e) => dispatch(setSearch(e.target.value))}
-        placeholder="Поиск продукции..."
-      />
-      <input type="submit" onClick={() => setOpenCard(!openCard)} />
-
+     
     </div>
   );
 };

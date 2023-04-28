@@ -3,23 +3,17 @@ import Header from "../../components/header/Header";
 import Category from "../../components/Category/Category";
 import Card from "../../components/card/Card";
 import CardsInfo from "../../components/CardsInfo/CardsInfo";
-import CardsInfo from "../../components/CardsInfo/CardsInfo";
-import Category from "../../components/Category/Category";
-import Card from "../../components/card/Card";
-import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GifInfo from "../../components/gifInfo/GifInfo";
 import PlaceOfChoice from "../../components/placeOfChoice/PlaceOfChoice";
-import useSearch from "../../hooks/UseSearch";
+import {  useSelector } from "react-redux";
 
 function MainPage() {
-  const { openCard } = useSearch();
-  //console.log(openCard);
+  const open = useSelector((state) => state.search.open);
   return (
     <div>
       <Header />
-      {/*<Card/>*/}
-      {openCard && (
+      {open && (
         <div>
           <Card />
         </div>

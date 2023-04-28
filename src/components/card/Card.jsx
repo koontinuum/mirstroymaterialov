@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { CardData } from "../../constants/CardData";
 import css from "./Card.module.scss";
 import { useSelector } from "react-redux";
+import Cart from "../cart/Cart";
 
 const Card = () => {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
-
+const [cart, setCart] = useState([])
 const search = useSelector((state) => state.search.value);
 
   const catagory = [
@@ -29,6 +30,8 @@ const search = useSelector((state) => state.search.value);
   const popup = () => {
     setOpen(!open);
   };
+
+  
   return (
     <div className={css.wrapper}>
       <div className={css.category}>
@@ -36,6 +39,7 @@ const search = useSelector((state) => state.search.value);
           Сортировка по
           {catagory[selected]}
         </h5>
+        <Cart/>
         <ul>
           {open &&
             catagory.map((item, i) => (
@@ -63,7 +67,7 @@ const search = useSelector((state) => state.search.value);
             <h4>{item.price}</h4>
             <div className={css.card_btn}>
               <button> В корзину </button>
-              <button> Подробнее</button>
+              <button > Подробнее</button>
             </div>
           </div>
         </div>
