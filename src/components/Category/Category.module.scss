@@ -30,7 +30,7 @@
     flex-wrap: wrap;
 }
 
-.box1, .box2 {
+.box1 {
     width: 272px;
     height: 292px;
     border: 1px solid gray;
@@ -45,30 +45,8 @@
         justify-content: center;
         gap: 10px;
         img {
-            width: 181px;
-            height: 181px;
+            object-fit: contain;
         }
-
-        .img_gidro {
-            width: 235px;
-            height: 174px;
-        }
-        
-        .img_teplo {
-            width: 181px;
-            height: 160px !important;
-        }
-        .img_eletrica {
-            width: 221px;
-        }
-        .img_santehnica {
-            width: 264px;
-        }
-        .img_poli {
-            width: 210px;
-            height: 181px;
-        }
-
         P {
             text-decoration: none;
             font-style: normal;
@@ -82,7 +60,7 @@
     }
 }
 
-.box1:hover, .box2:hover {
+.box1:hover {
     transition: 0.5s;
     box-shadow: 0 0 8px rgba(0, 0, 0, 1.6);
     background: white;
