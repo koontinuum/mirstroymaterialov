@@ -1,20 +1,30 @@
 import React from "react";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
+
 import css from "./Footer.module.scss";
 import logo from "../../assets/logo2dark-bg.png";
 import locationIcon from "../../assets/headerIcons/locationIcon.svg";
 import phoneCallIcon from "../../assets/headerIcons/phoneCallIcon.svg";
-import dileveryIcon from "../../assets/headerIcons/deliveryIcon.svg";
+import dileveryIcon from "../../assets/icons8-fast-shipping-64.png";
 
 const Footer = () => {
   return (
     <footer className={css.wrapper}>
       <div className={css.logo}>
         <img src={logo} alt="" />
-        <p>
-          Торговая сеть «СтройДвор.KG» – перспективная компания Кыргызстана,
-          специализирующаяся на поставках и продаже строительных товаров и
-          товаров хозяйственного назначения.
-        </p>
+        <YMaps>
+          <div className={css.gps}>
+            <Map
+              style={{ width: "400px", height: "200px" }}
+              defaultState={{
+                center: [55.611914, 37.485882],
+                zoom: 15,
+              }}
+            >
+              <Placemark geometry={[55.611914, 37.485882]} />
+            </Map>
+          </div>
+        </YMaps>
       </div>
       <div className={css.footer_service}>
         <h4>Наши основные приоритеты</h4>
